@@ -1,0 +1,25 @@
+{
+  "name": "contactapp",
+  "version": "1.0.0",
+  "description": "Simple mongodb project",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nope"
+  },
+  "keywords": [
+    "nope"
+  ],
+  "author": "Eduard Grabchak and MrOnlineCoder",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongojs": "^2.4.0"
+  }
+}
