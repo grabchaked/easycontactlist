@@ -5,7 +5,7 @@ var mongojs = require('mongojs');
 //var jwt = require('jsonwebtoken');
 var db = mongojs(process.env.MONGODB_URI || 'contactlist',['contactlist']);
 
-var crypto = require('crypto');
+var sha256 = require("js-sha256").sha256;
 
 
 // THIS IS SECURE INFORMATION
@@ -15,9 +15,6 @@ var adminPassword = 'ba2d4a948044e7f254a60b3cf43c0a298da98c0a84f3d29a0d8d2e24ca5
 
 //==============
 
-function sha256(str) {
- return crypto.createHash('sha256').update(str).digest('base64');
-}
 
 app.use(express.static(__dirname+'/public'));
 
